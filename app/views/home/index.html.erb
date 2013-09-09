@@ -1,4 +1,6 @@
-<%= link_to('Refresh calendars', home_refresh_path, class: 'btn btn-info', style: 'float: right') %>
+<div style="float:right">
+  <%= form_tag(home_refresh_path, method: :put) { submit_tag('Refresh calendars', class: 'btn btn-info', disable_with: 'Refreshing ...') } %>
+</div>
 <h2>Search</h2>
 <div class="well">
   <%= form_tag({}, method: :get, id: 'search_dates') do %>
@@ -16,7 +18,7 @@
           <%= number_field_tag(:number_of_people, params[:number_of_people] || 2, style: 'width: 30px;') %>
         </div>
       </div>
-      <%= submit_tag('Search', class: 'btn btn-primary', name: nil) %>
+      <%= submit_tag('Search', class: 'btn btn-primary', name: nil, disable_with: 'Searching ...') %>
       <%= link_to('Clear', home_index_path, class: 'btn') %>
       <p style="margin: 3px 0;">* Calendars automatically refresh every 6 hours</p>
   <% end %>

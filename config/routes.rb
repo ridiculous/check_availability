@@ -3,7 +3,7 @@ CheckAvailability::Application.routes.draw do
   resources :calendars
 
   get "home/index"
-  get "home/refresh"
+  put "home/refresh"
 
   root to: "home#index"
 
