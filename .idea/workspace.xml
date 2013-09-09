@@ -24,6 +24,8 @@
     <file path="/seeds.rb" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378722267169" ignored="false" />
     <file path="/Gemfile" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378764247495" ignored="false" />
     <file path="/.gitignore" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378764628115" ignored="false" />
+    <file path="/a.dummy" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378765818102" ignored="false" />
+    <file path="/README.md" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378765847645" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +63,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="61" selection-end="61" vertical-scroll-proportion="0.23817864">
+            <state line="8" column="9" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newrelic.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="254" column="39" selection-start="10674" selection-end="10692" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/calendar.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="32" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="63" selection-start="102" selection-end="102" vertical-scroll-proportion="0.08931699">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="units_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/units_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/units_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130909083012_create_units.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
@@ -96,6 +133,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -661,9 +699,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.67111856" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67111856" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -672,7 +711,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -740,21 +778,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="91" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.62643677" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130909083012_create_units.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130909082811_create_calendars.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -777,7 +800,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="120" selection-end="127" vertical-scroll-proportion="0.14886165" />
+        <state line="5" column="19" selection-start="120" selection-end="127" vertical-scroll-proportion="0.14886165">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
@@ -790,14 +815,11 @@
         <state line="14" column="61" selection-start="318" selection-end="318" vertical-scroll-proportion="0.43669724" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/calendar.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="753" selection-end="753" vertical-scroll-proportion="0.19964974" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/unit.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="458" selection-end="458" vertical-scroll-proportion="0.4045534" />
+        <state line="16" column="66" selection-start="458" selection-end="458" vertical-scroll-proportion="0.4045534">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
@@ -821,7 +843,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="61" selection-end="61" vertical-scroll-proportion="0.23817864">
+        <state line="8" column="9" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="254" column="39" selection-start="10674" selection-end="10692" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/units_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/calendar.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="32" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="63" selection-start="102" selection-end="102" vertical-scroll-proportion="0.08931699">
           <folding />
         </state>
       </provider>

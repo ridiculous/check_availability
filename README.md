@@ -1,4 +1,4 @@
-check_availability
+Check Availability
 ==================
 
-Scrapes HomeAway Connect calendars and checks for availability
+Scrapes Home Away Connect calendars and checks for availability
