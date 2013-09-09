@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Unit:</b>
+  <%= @calendar.unit_id %>
+</p>
+
+<p>
+  <b>Dates:</b>
+  <%= @calendar.dates %>
+</p>
+
+<p>
+  <b>Refresh date:</b>
+  <%= @calendar.refresh_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_calendar_path(@calendar) %> |
+<%= link_to 'Back', calendars_path %>

@@ -1,0 +1,23 @@
+<h1>Units</h1>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Calendar url</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @units.each do |unit| %>
+  <tr>
+    <td><%= unit.name %></td>
+    <td><%= link_to(unit.calendar_url, unit.calendar_url) %></td>
+    <td><%= link_to 'Edit', edit_unit_path(unit), class: 'btn' %></td>
+    <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Unit', new_unit_path, class: 'btn btn-primary' %>

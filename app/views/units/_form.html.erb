@@ -1,0 +1,30 @@
+<%= form_for(@unit) do |f| %>
+    <% if @unit.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@unit.errors.count, "error") %> prohibited this unit from being saved:</h2>
+
+          <ul>
+            <% @unit.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="clearfix">
+      <div class="field">
+        <%= f.label :name %>
+        <br/>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :calendar_url %>
+        <br/>
+        <%= f.text_field :calendar_url, style: 'width: 450px;' %>
+      </div>
+    </div>
+    <div class="actions">
+      <%= f.submit('Save', class: 'btn btn-primary') %>
+      <%= link_to('Cancel', units_path, class: 'btn') %>
+    </div>
+<% end %>

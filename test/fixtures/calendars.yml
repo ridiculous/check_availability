@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  unit_id: 1
+  dates: MyString
+  refresh_date: 2013-09-08 22:28:11
+
+two:
+  unit_id: 1
+  dates: MyString
+  refresh_date: 2013-09-08 22:28:11
