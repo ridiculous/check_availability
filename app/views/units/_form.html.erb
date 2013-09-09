@@ -18,6 +18,11 @@
         <%= f.text_field :name %>
       </div>
       <div class="field">
+        <%= f.label :capacity %>
+        <br/>
+        <%= f.number_field :capacity, style: 'width: 50px;' %>
+      </div>
+      <div class="field">
         <%= f.label :calendar_url %>
         <br/>
         <%= f.text_field :calendar_url, style: 'width: 450px;' %>

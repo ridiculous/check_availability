@@ -10,6 +10,7 @@ class Unit < ActiveRecord::Base
 
   validates :name, :calendar_url, presence: true
   validates :name, uniqueness: {case_sensitive: false}
+  validates :capacity, numericality: true
 
   class << self
 
