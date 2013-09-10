@@ -11,7 +11,7 @@
     <file path="/search.html.erb" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378717904582" ignored="false" />
     <file path="/bootstrap.css.erb" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378717282629" ignored="false" />
     <file path="/home.js.coffee" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378718022187" ignored="false" />
-    <file path="/home_controller.rb" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378724648190" ignored="false" />
+    <file path="/home_controller.rb" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378787556700" ignored="false" />
     <file path="/index.html.erb" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378768033978" ignored="false" />
     <file path="/Ruby Console" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378722085646" ignored="false" />
     <file path="/application.rb" changelist="97ada380-d935-4b3b-8d98-314e92d3017f" time="1378718791586" ignored="false" />
@@ -68,19 +68,26 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/units/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="-9.153846">
+            <state line="14" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="42" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.41541353">
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="22" column="42" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-7.3846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="33" selection-start="314" selection-end="314" vertical-scroll-proportion="0.23817864">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +95,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/units/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="-18.961538">
+            <state line="29" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +118,6 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/calendar.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -123,6 +129,7 @@
         <option value="$PROJECT_DIR$/app/controllers/units_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/units/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
       </list>
     </option>
   </component>
@@ -422,14 +429,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="IRB console.Rails console: check_availability">
     <configuration default="false" name="Rails console: check_availability" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
@@ -796,13 +803,6 @@
         <state line="1" column="22" selection-start="75" selection-end="75" vertical-scroll-proportion="0.031021899" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="668" selection-end="668" vertical-scroll-proportion="0.6007005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="12" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" />
@@ -849,7 +849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/units/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="-18.961538">
+        <state line="29" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -870,17 +870,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/units/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="-9.153846">
+        <state line="14" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.41541353">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="22" column="42" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-7.3846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="314" selection-end="314" vertical-scroll-proportion="0.23817864">
+          <folding />
         </state>
       </provider>
     </entry>

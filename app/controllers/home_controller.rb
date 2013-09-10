@@ -6,7 +6,7 @@ class HomeController < ApplicationController
       errors = []
       if @range.start_at > @range.stop_at
         errors << 'Departure date should be later than arrival date'
-      elsif Date.today > @range.start_at.to_date
+      elsif Time.zone.now.to_date > @range.start_at.to_date
         errors << 'You should really plan for a trip in the future instead of the past'
       end
 
