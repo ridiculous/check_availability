@@ -49,9 +49,6 @@ class Calendar < ActiveRecord::Base
     end
   end
 
-  class Availability < Struct.new(:first, :duration, :errors)
-  end
-
   private
 
   def set_refresh_date
