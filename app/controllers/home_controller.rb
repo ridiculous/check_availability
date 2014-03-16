@@ -20,9 +20,7 @@ class HomeController < ApplicationController
   end
 
   def refresh
-    Unit.all.each do |unit|
-      unit.calendar.refresh_available_dates! if unit.calendar
-    end
+    Unit.refresh_all
     redirect_to(home_index_path, notice: 'Calendars have been refreshed!')
   end
 

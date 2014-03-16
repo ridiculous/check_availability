@@ -13,16 +13,20 @@ class Unit < ActiveRecord::Base
   validates :capacity, numericality: true
 
   class << self
+    def refresh_all
+      refresh(all.reject { |u| u.calendar.nil? }, true)
+    end
+
     def find_openings(start_date, end_date, num_of_people)
       units = all.reject { |u| u.calendar.nil? }
       refresh(units)
       units.keep_if { |u| u.calendar.check_availability(start_date, end_date, num_of_people) }
     end
 
-    def refresh(units)
+    def refresh(units, force=false)
       units.map { |u|
         Thread.new do
-          if u.calendar.time_to_refresh?
+          if force || u.calendar.time_to_refresh?
             u.calendar.refresh_available_dates!
           end
         end
