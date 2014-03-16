@@ -4,7 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Capacity</th>
-    <th>VRBO Unit #</th>
+    <th>VRBO Listing</th>
     <th></th>
     <th></th>
   </tr>
@@ -13,7 +13,7 @@
   <tr>
     <td><%= unit.name %></td>
     <td><%= unit.capacity %></td>
-    <td><%= link_to(unit.calendar_url, unit.calendar_url) %></td>
+    <td><%= link_to(unit.vrbo_url, unit.vrbo_url, target: '_blank') %></td>
     <td><%= link_to 'Edit', edit_unit_path(unit), class: 'btn' %></td>
     <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
   </tr>
