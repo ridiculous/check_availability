@@ -13,10 +13,25 @@ class Unit < ActiveRecord::Base
   validates :capacity, numericality: true
 
   class << self
-
     def find_openings(start_date, end_date, num_of_people)
-      all.keep_if { |unit| unit.calendar && unit.calendar.check_availability(start_date, end_date, num_of_people) }
+      units = all.reject { |u| u.calendar.nil? }
+      refresh(units)
+      units.keep_if { |u| u.calendar.check_availability(start_date, end_date, num_of_people) }
     end
+
+    def refresh(units)
+      units.map { |u|
+        Thread.new do
+          if u.calendar.time_to_refresh?
+            u.calendar.refresh_available_dates!
+          end
+        end
+      }.each(&:join)
+    end
+  end
+
+  def vrbo_url
+    "http://vrbo.com/#{calendar_url}"
   end
 
   private
@@ -28,4 +43,5 @@ class Unit < ActiveRecord::Base
   def set_default_capacity
     self.capacity ||= 2
   end
+
 end

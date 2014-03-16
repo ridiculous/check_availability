@@ -2,6 +2,7 @@ class HomeController < ApplicationController
 
   def index
     @range = DateRange.new(params[:start_date], params[:end_date])
+    @calendar = Calendar.order('refresh_date DESC').first
     if params[:start_date]
       errors = []
       if @range.start_at > @range.stop_at

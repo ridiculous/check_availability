@@ -1,4 +1,7 @@
 class Calendar < ActiveRecord::Base
+
+  REFRESH_INTERVAL = 3
+
   attr_accessible :dates, :refresh_date, :unit_id
 
   belongs_to :unit
@@ -8,45 +11,22 @@ class Calendar < ActiveRecord::Base
   after_validation :set_refresh_date
 
   def check_availability(arrival, depart, num_of_people)
-    refresh_available_dates! if dates.empty? || (refresh_date.nil? || 6.hours.ago > refresh_date)
-    if available = Integer(num_of_people) <= unit.capacity
-      arrival.upto(depart - 1.day).each do |date|
-        available = false if dates.exclude?(date.to_s)
-      end
-    end
-    available
+    available = Integer(num_of_people) <= unit.capacity
+    available && vrbo_calendar.available?(arrival, depart, dates)
   end
 
-  # Calendar css classes:
-  # - ACADV available
-  # - ACWDV weekend day available
+  def time_to_refresh?
+    dates.empty? || (refresh_date.nil? || REFRESH_INTERVAL.hours.ago > refresh_date)
+  end
 
   def refresh_available_dates!
-    puts "getting #{unit.name}"
-    calendar = new_web_agent.get(unit.calendar_url)
-    puts "got #{unit.name}"
-    # map out available dates and save to DB as array
-    today = Date.today
-    tds = Hash.new
-    update_attributes!(
-        refresh_date: Time.now,
-        dates: today.upto(today + 1.year).map { |date|
-          m = date.month.to_s
-          table_cells = calendar.search("#calMonthAvail#{date.year}#{m.length == 1 ? "0#{m}" : m}").search('td.ACADV, td.ACWDV')
-          if table_cells
-            tds[m] ||= table_cells.map { |cell| cell.children.to_s }
-            date.to_s if tds[m].include?(date.day.to_s)
-          end
-        }.compact
-    )
+    puts "-> getting #{unit.name}"
+    update_attributes!(refresh_date: Time.now, dates: vrbo_calendar.find_all_available_dates)
+    puts "-> got #{unit.name}"
   end
 
-  def new_web_agent
-    Mechanize.new do |a|
-      a.user_agent_alias = 'Mac Safari'
-      a.redirection_limit = 10
-      a.follow_meta_refresh = true
-    end
+  def vrbo_calendar
+    VRBO::Calendar.new(unit.calendar_url) # actually the url is just the unit now id
   end
 
   private

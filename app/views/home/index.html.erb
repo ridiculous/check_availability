@@ -20,14 +20,20 @@
       </div>
       <%= submit_tag('Search', class: 'btn btn-primary', name: nil, disable_with: 'Searching ...') %>
       <%= link_to('Clear', home_index_path, class: 'btn') %>
-      <p style="margin: 3px 0;color: #666;">* Calendars automatically refresh every 6 hours</p>
+      <p style="margin: 3px 0;color: #666;">
+        * Calendars automatically refresh every <%= Calendar::REFRESH_INTERVAL %> hours.
+        <% if @calendar.try(:refresh_date) %>
+            Last refreshed on
+            <span style="color: #000;"><%= @calendar.refresh_date.strftime('%B %d, %Y %l:%M %p') %></span>
+        <% end %>
+      </p>
   <% end %>
   <% if @units %>
       <h3 style="margin-top: 5px;padding-top: 5px;border-top: 1px solid #CCC;">Openings</h3>
 
       <% if @units.any? %>
           <% @units.each do |unit| %>
-              <%= link_to(unit.name, unit.calendar_url, class: 'btn btn-large') %>
+              <%= link_to(unit.name, unit.vrbo_url, class: 'btn btn-large', target: '_blank') %>
           <% end %>
       <% else %>
           <h5>Nothing</h5>
