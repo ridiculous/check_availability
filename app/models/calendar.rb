@@ -21,7 +21,7 @@ class Calendar < ActiveRecord::Base
 
   def refresh_available_dates!
     puts "-> getting #{unit.name}"
-    update_attributes!(refresh_date: Time.now, dates: vrbo_calendar.find_all_available_dates)
+    update_attributes!(refresh_date: Time.now, dates: vrbo_calendar.find_available_dates)
     puts "-> got #{unit.name}"
   end
 

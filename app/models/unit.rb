@@ -35,7 +35,7 @@ class Unit < ActiveRecord::Base
   end
 
   def vrbo_url
-    "http://vrbo.com/#{calendar_url}"
+    VRBO::Calendar.new(calendar_url).url
   end
 
   private

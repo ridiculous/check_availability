@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20130909083012) do
 
   create_table "calendars", :force => true do |t|
     t.integer  "unit_id"
-    t.string   "dates",        :limit => 5000
-    t.datetime "refresh_date",                 :default => '2014-03-16 08:21:49'
+    t.string   "dates",        :limit => 5500
+    t.datetime "refresh_date",                 :default => '2014-03-17 21:01:10'
     t.datetime "created_at",                                                      :null => false
     t.datetime "updated_at",                                                      :null => false
   end
